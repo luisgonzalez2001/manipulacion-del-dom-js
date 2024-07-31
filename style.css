@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    background-color: rgba(214, 219, 223, 0.918);
+}
+
+.theme-toogle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.theme-toogle button{
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px black;
+}
+
+.theme-toogle button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.task-manager {
+    width: 70%;
+    height: auto;
+    max-width: 1200px;
+    min-width: 260px;
+    margin: 0 auto;
+    padding: 30px 15px 30px 15px;
+    margin-top: 80px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px gray;
+}
+
+.task-manager h1 {
+    margin-bottom: 20px;
+}
+
+.task-manager input {
+    width: 65%;
+    height: 40px;
+    padding-left: 8px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+
+.task-manager button {
+    width: 28%;
+    max-width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.task-manager ul {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.task-manager li {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(214, 219, 223, 0.918);
+    border-radius: 5px;
+    border: none;
+    list-style: none;
+    padding: 10px;
+}
+
+.delete-btn {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/trash-outline.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.edit-btn {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/create-outline.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
