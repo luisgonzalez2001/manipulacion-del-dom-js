@@ -78,9 +78,11 @@ function saveTasksInLocalStorage(task) {
 
 function loadTasks() {
     const tasks = JSON.parse(localStorage.getItem("tasks" || "[]"));
-    tasks.forEach(task => {
-        taskList.appendChild(createTaskElement(task));
-    });
+    if(tasks) {
+        tasks.forEach(task => {
+            taskList.appendChild(createTaskElement(task));
+        }); 
+    }
 }
 
 function updateLocalStorage() {
