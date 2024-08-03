@@ -111,3 +111,17 @@ body {
     background-size: cover;
     cursor: pointer;
 }
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .task-manager {
+    background:#222;
+    color:#fff
+}
+
+.dark-theme #taskList li {
+    background: #444;
+}
